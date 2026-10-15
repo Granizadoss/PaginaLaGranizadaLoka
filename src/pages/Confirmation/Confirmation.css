@@ -1,0 +1,446 @@
+/* ========================================
+   PÁGINA DE CONFIRMACIÓN
+======================================== */
+
+.confirmation-page {
+  min-height: calc(100vh - 80px);
+
+  background: #f8faff;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 50px 20px;
+}
+
+
+/* ========================================
+   TARJETA PRINCIPAL
+======================================== */
+
+.confirmation-card {
+  width: 100%;
+  max-width: 700px;
+
+  background: white;
+
+  border-radius: 25px;
+
+  padding: 45px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+
+  border: 1px solid #eee6ff;
+}
+
+
+/* ========================================
+   ICONO
+======================================== */
+
+.confirmation-icon {
+  width: 75px;
+  height: 75px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #6c2bd9;
+
+  color: white;
+
+  font-size: 42px;
+  font-weight: bold;
+
+  box-shadow: 0 8px 20px rgba(108, 43, 217, 0.25);
+}
+
+
+/* ========================================
+   ENCABEZADO
+======================================== */
+
+.confirmation-card h1 {
+  margin: 0 0 10px;
+
+  text-align: center;
+
+  color: #222;
+
+  font-size: 2.2rem;
+}
+
+.confirmation-message {
+  margin: 0 0 25px;
+
+  text-align: center;
+
+  color: #777;
+
+  font-size: 1rem;
+}
+
+
+/* ========================================
+   NÚMERO DE PEDIDO
+======================================== */
+
+.order-number {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 5px;
+
+  margin-bottom: 30px;
+
+  padding: 18px;
+
+  border-radius: 15px;
+
+  background: #f3edff;
+}
+
+.order-number span {
+  color: #777;
+
+  font-size: 0.85rem;
+}
+
+.order-number strong {
+  color: #6c2bd9;
+
+  font-size: 1.5rem;
+}
+
+
+/* ========================================
+   SECCIONES
+======================================== */
+
+.confirmation-details,
+.confirmation-products {
+  margin-bottom: 25px;
+
+  padding: 22px;
+
+  background: #fafafa;
+
+  border: 1px solid #eeeeee;
+
+  border-radius: 16px;
+}
+
+.confirmation-details h2,
+.confirmation-products h2 {
+  margin: 0 0 18px;
+
+  color: #222;
+
+  font-size: 1.2rem;
+}
+
+
+/* ========================================
+   DATOS DEL CLIENTE
+======================================== */
+
+.detail-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 20px;
+
+  padding: 12px 0;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+
+  padding-bottom: 0;
+}
+
+.detail-row span {
+  color: #777;
+
+  font-size: 0.9rem;
+}
+
+.detail-row strong {
+  color: #333;
+
+  font-size: 0.9rem;
+
+  text-align: right;
+
+  word-break: break-word;
+}
+
+
+/* ========================================
+   PRODUCTOS
+======================================== */
+
+.confirmation-product {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 14px 0;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.confirmation-product:last-of-type {
+  border-bottom: none;
+}
+
+
+.confirmation-product-main {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  min-width: 0;
+}
+
+
+.confirmation-product-emoji {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #f3edff;
+
+  font-size: 27px;
+}
+
+
+.confirmation-product-main strong {
+  display: block;
+
+  color: #222;
+
+  font-size: 0.95rem;
+}
+
+
+.confirmation-product-main p {
+  margin: 4px 0 0;
+
+  color: #888;
+
+  font-size: 0.8rem;
+}
+
+
+.confirmation-product > strong {
+  color: #6c2bd9;
+
+  font-size: 1rem;
+
+  white-space: nowrap;
+}
+
+
+/* ========================================
+   TOTAL
+======================================== */
+
+.confirmation-total {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-top: 15px;
+
+  padding-top: 18px;
+
+  border-top: 2px solid #e8ddff;
+}
+
+.confirmation-total span {
+  color: #333;
+
+  font-size: 1.1rem;
+
+  font-weight: 600;
+}
+
+.confirmation-total strong {
+  color: #6c2bd9;
+
+  font-size: 1.5rem;
+}
+
+
+/* ========================================
+   MENSAJE FINAL
+======================================== */
+
+.confirmation-thanks {
+  margin-bottom: 30px;
+
+  padding: 18px;
+
+  border-radius: 14px;
+
+  background: #f3edff;
+
+  text-align: center;
+}
+
+.confirmation-thanks strong {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #6c2bd9;
+
+  font-size: 1rem;
+}
+
+.confirmation-thanks p {
+  margin: 0;
+
+  color: #777;
+
+  font-size: 0.9rem;
+}
+
+
+/* ========================================
+   BOTONES
+======================================== */
+
+.confirmation-buttons {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 15px;
+}
+
+
+.confirmation-primary-button,
+.confirmation-secondary-button {
+  min-height: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 12px 15px;
+
+  border-radius: 12px;
+
+  text-decoration: none;
+
+  font-size: 0.95rem;
+
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+
+/* BOTÓN PRINCIPAL */
+
+.confirmation-primary-button {
+  background: #6c2bd9;
+
+  color: white;
+}
+
+.confirmation-primary-button:hover {
+  background: #5420ac;
+
+  transform: translateY(-2px);
+}
+
+
+/* BOTÓN SECUNDARIO */
+
+.confirmation-secondary-button {
+  background: white;
+
+  color: #6c2bd9;
+
+  border: 2px solid #6c2bd9;
+}
+
+.confirmation-secondary-button:hover {
+  background: #f3edff;
+
+  transform: translateY(-2px);
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 600px) {
+
+  .confirmation-page {
+    padding: 30px 15px;
+  }
+
+  .confirmation-card {
+    padding: 30px 20px;
+
+    border-radius: 20px;
+  }
+
+  .confirmation-card h1 {
+    font-size: 1.8rem;
+  }
+
+  .detail-row {
+    flex-direction: column;
+
+    gap: 5px;
+  }
+
+  .detail-row strong {
+    text-align: left;
+  }
+
+  .confirmation-product {
+    align-items: flex-start;
+  }
+
+  .confirmation-buttons {
+    grid-template-columns: 1fr;
+  }
+
+}

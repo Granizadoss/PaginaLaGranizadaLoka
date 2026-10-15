@@ -1,0 +1,424 @@
+/* ========================================
+   FONDO DEL MODAL
+======================================== */
+
+.modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 1000;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 30px;
+
+  background: rgba(20, 10, 35, 0.55);
+
+  backdrop-filter: blur(5px);
+
+  animation: modalFadeIn 0.25s ease;
+}
+
+
+/* ========================================
+   CONTENEDOR DEL MODAL
+======================================== */
+
+.product-modal {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 850px;
+
+  min-height: 480px;
+
+  display: grid;
+
+  grid-template-columns: 42% 58%;
+
+  overflow: hidden;
+
+  background: white;
+
+  border-radius: 28px;
+
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
+
+  animation: modalScaleIn 0.3s ease;
+}
+
+
+/* ========================================
+   BOTÓN CERRAR
+======================================== */
+
+.modal-close {
+  position: absolute;
+
+  top: 18px;
+
+  right: 18px;
+
+  z-index: 10;
+
+  width: 45px;
+
+  height: 45px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #f0e7ff;
+
+  color: #6c2bd9;
+
+  font-size: 2rem;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+
+.modal-close:hover {
+  background: #6c2bd9;
+
+  color: white;
+
+  transform: rotate(90deg);
+}
+
+
+/* ========================================
+   PARTE IZQUIERDA
+======================================== */
+
+.modal-product-image {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  min-height: 480px;
+
+  background: linear-gradient(
+    145deg,
+    #f5efff,
+    #eee3ff
+  );
+
+  font-size: 150px;
+}
+
+
+/* ========================================
+   PARTE DERECHA
+======================================== */
+
+.modal-product-info {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 55px 55px 45px;
+}
+
+
+/* ========================================
+   ETIQUETA POPULAR
+======================================== */
+
+.modal-badge {
+  align-self: flex-start;
+
+  margin-bottom: 15px;
+
+  padding: 7px 14px;
+
+  border-radius: 20px;
+
+  background: #ffd54f;
+
+  color: #333;
+
+  font-size: 0.85rem;
+
+  font-weight: 700;
+}
+
+
+/* ========================================
+   TÍTULO
+======================================== */
+
+.modal-product-info h2 {
+  margin: 0 0 20px;
+
+  color: #202a3a;
+
+  font-size: 2.5rem;
+
+  line-height: 1.15;
+}
+
+
+/* ========================================
+   DESCRIPCIÓN
+======================================== */
+
+.modal-description {
+  margin: 0 0 20px;
+
+  color: #666;
+
+  font-size: 1.05rem;
+
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   PRECIO
+======================================== */
+
+.modal-price {
+  margin: 0 0 20px;
+
+  color: #6c2bd9;
+
+  font-size: 1.9rem;
+
+  font-weight: 800;
+}
+
+
+/* ========================================
+   CANTIDAD
+======================================== */
+
+.modal-quantity {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin: 15px 0;
+
+  color: #333;
+
+  font-weight: 600;
+}
+
+
+.quantity-selector {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 5px 10px;
+
+  border: 2px solid #e5d8ff;
+
+  border-radius: 30px;
+
+  background: #faf8ff;
+}
+
+
+.quantity-selector button {
+  width: 34px;
+
+  height: 34px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #6c2bd9;
+
+  color: white;
+
+  font-size: 1.2rem;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+
+.quantity-selector button:hover {
+  background: #5420ac;
+
+  transform: scale(1.08);
+}
+
+
+.quantity-selector strong {
+  min-width: 25px;
+
+  text-align: center;
+
+  color: #222;
+
+  font-size: 1.1rem;
+}
+
+
+/* ========================================
+   TOTAL
+======================================== */
+
+.modal-total {
+  margin: 10px 0 20px;
+
+  color: #555;
+
+  font-size: 1.1rem;
+}
+
+
+.modal-total strong {
+  color: #6c2bd9;
+
+  font-size: 1.35rem;
+}
+
+
+/* ========================================
+   BOTÓN AGREGAR
+======================================== */
+
+.modal-add-button {
+  width: 100%;
+
+  padding: 16px 20px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #6c2bd9;
+
+  color: white;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+
+.modal-add-button:hover {
+  background: #5420ac;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(108, 43, 217, 0.25);
+}
+
+
+/* ========================================
+   ANIMACIONES
+======================================== */
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes modalScaleIn {
+  from {
+    opacity: 0;
+
+    transform: scale(0.92);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: scale(1);
+  }
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 700px) {
+
+  .modal-overlay {
+    padding: 15px;
+  }
+
+  .product-modal {
+    max-width: 500px;
+
+    grid-template-columns: 1fr;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+  }
+
+  .modal-product-image {
+    min-height: 220px;
+
+    font-size: 100px;
+  }
+
+  .modal-product-info {
+    padding: 35px 25px 30px;
+  }
+
+  .modal-product-info h2 {
+    font-size: 2rem;
+  }
+
+  .modal-close {
+    width: 40px;
+
+    height: 40px;
+
+    font-size: 1.7rem;
+  }
+
+}

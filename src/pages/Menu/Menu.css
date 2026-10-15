@@ -1,0 +1,309 @@
+/* =========================================
+   PÁGINA DEL MENÚ
+========================================= */
+
+.menu-page {
+  min-height: 100vh;
+  background: #f8f7fc;
+  padding-bottom: 80px;
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.menu-header {
+  background: linear-gradient(
+    135deg,
+    #6c2bd9,
+    #8b5cf6,
+    #2196f3
+  );
+
+  color: white;
+
+  text-align: center;
+
+  padding: 70px 20px 60px;
+}
+
+.menu-header h1 {
+  margin: 0 0 15px;
+
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.menu-header p {
+  margin: 0;
+
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+/* =========================================
+   FILTROS
+========================================= */
+
+.menu-filters {
+  max-width: 1200px;
+
+  margin: -30px auto 50px;
+
+  padding: 0 25px;
+
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =========================================
+   BUSCADOR
+========================================= */
+
+.menu-search {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 25px;
+}
+
+.menu-search input {
+  width: 100%;
+  max-width: 620px;
+
+  padding: 17px 25px;
+
+  border: none;
+
+  border-radius: 35px;
+
+  background: white;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.10);
+
+  font-size: 17px;
+
+  outline: none;
+
+  color: #1f2937;
+
+  transition: 0.2s ease;
+}
+
+.menu-search input:focus {
+  box-shadow:
+    0 8px 30px rgba(108, 43, 217, 0.20);
+}
+
+.menu-search input::placeholder {
+  color: #777;
+}
+
+
+/* =========================================
+   CATEGORÍAS
+========================================= */
+
+.menu-categories {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+}
+
+.menu-categories button {
+  border: none;
+
+  padding: 12px 22px;
+
+  border-radius: 25px;
+
+  background: white;
+
+  color: #4b5563;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.menu-categories button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 7px 20px rgba(108, 43, 217, 0.15);
+}
+
+.menu-categories button.active {
+  background: #6c2bd9;
+
+  color: white;
+
+  box-shadow:
+    0 6px 18px rgba(108, 43, 217, 0.30);
+}
+
+
+/* =========================================
+   PRODUCTOS
+========================================= */
+
+.menu-products {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 0 25px;
+}
+
+.products-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 30px;
+}
+
+
+/* =========================================
+   SIN RESULTADOS
+========================================= */
+
+.menu-no-results {
+  text-align: center;
+
+  padding: 80px 20px;
+
+  background: white;
+
+  border-radius: 25px;
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.menu-no-results-icon {
+  font-size: 60px;
+
+  margin-bottom: 15px;
+}
+
+.menu-no-results h2 {
+  margin: 0 0 10px;
+
+  font-size: 28px;
+
+  color: #1f2937;
+}
+
+.menu-no-results p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 17px;
+}
+
+
+/* =========================================
+   TABLETS
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .products-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+}
+
+
+/* =========================================
+   TABLETS PEQUEÑAS
+========================================= */
+
+@media (max-width: 800px) {
+
+  .menu-header {
+    padding: 55px 20px 50px;
+  }
+
+  .menu-header h1 {
+    font-size: 38px;
+  }
+
+  .menu-header p {
+    font-size: 17px;
+  }
+
+  .products-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+/* =========================================
+   CELULARES
+========================================= */
+
+@media (max-width: 550px) {
+
+  .menu-header h1 {
+    font-size: 32px;
+  }
+
+  .menu-filters {
+    padding: 0 15px;
+  }
+
+  .menu-products {
+    padding: 0 15px;
+  }
+
+  .menu-search input {
+    font-size: 15px;
+
+    padding: 15px 20px;
+  }
+
+  .menu-categories {
+    gap: 8px;
+  }
+
+  .menu-categories button {
+    padding: 10px 15px;
+
+    font-size: 14px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+}

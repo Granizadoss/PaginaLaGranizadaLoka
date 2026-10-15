@@ -1,0 +1,27 @@
+.products{
+
+    padding:80px;
+
+}
+
+.products h2{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+    font-size:2.5rem;
+
+}
+
+.products-grid{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
